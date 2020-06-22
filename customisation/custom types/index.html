@@ -11,21 +11,23 @@
         <meta name="description" content="Documentation for leekslazylogger - an easy-to-use and lightweight Node console logger with file support.">
       
       
+        <link rel="canonical" href="https://logger.eartharoid.me/customisation/custom%20types/">
+      
       
         <meta name="author" content="Isaac Saunders">
       
-      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="shortcut icon" href="../../img/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.2">
     
     
       
-        <title>leekslazylogger</title>
+        <title>Custom log types - leekslazylogger</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -61,6 +63,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#custom-log-types" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -70,7 +77,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-header-nav__button md-logo" aria-label="leekslazylogger">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -84,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              
+              Custom log types
             
           </span>
         </div>
@@ -156,7 +163,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-nav__button md-logo" aria-label="leekslazylogger">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="../../img/logo.png" alt="logo">
 
     </a>
     leekslazylogger
@@ -183,7 +190,7 @@
 
 
   <li class="md-nav__item">
-    <a href="." title="leekslazylogger documentation" class="md-nav__link">
+    <a href="../.." title="leekslazylogger documentation" class="md-nav__link">
       leekslazylogger documentation
     </a>
   </li>
@@ -195,7 +202,7 @@
 
 
   <li class="md-nav__item">
-    <a href="customisation/" title="Customisation" class="md-nav__link">
+    <a href="../" title="Customisation" class="md-nav__link">
       Customisation
     </a>
   </li>
@@ -207,7 +214,7 @@
 
 
   <li class="md-nav__item">
-    <a href="getting%20started/" title="Getting Started" class="md-nav__link">
+    <a href="../../getting%20started/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -217,10 +224,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Customisation
@@ -242,11 +251,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="customisation/custom%20types/" title="Custom log types" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Custom log types" class="md-nav__link md-nav__link--active">
       Custom log types
     </a>
+    
   </li>
 
         
@@ -262,12 +280,78 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
+                  <a href="https://github.com/eartharoid/leekslazylogger/edit/master/docs/customisation/custom types.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  
+                
+                
+                <h1 id="custom-log-types">Custom log types<a class="headerlink" href="#custom-log-types" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">yes</span> <span class="o">=</span> <span class="s2">&quot;no&quot;</span><span class="p">;</span>
+<span class="kr">const</span> <span class="kd">function</span> <span class="o">=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
 
+<span class="p">...</span>
+
+<span class="c1">// bonjour</span>
+
+<span class="c1">// fancy</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Hey! This is a notice.</p>
+</div>
+<details class="note"><summary>Yes?</summary><p>No</p>
+</details>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>mm</p>
+</div>
+<div class="admonition tldr">
+<p class="admonition-title">Tldr</p>
+<p>learn to read</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>information</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>hi</p>
+</div>
+<div class="admonition help">
+<p class="admonition-title">Help</p>
+<p>no</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>I warned you...</p>
+</div>
+                
+              
               
                 
 
@@ -280,6 +364,27 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../getting%20started/" title="Getting Started" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -341,15 +446,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "",
+          base: "../..",
           features: ["instant"],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
