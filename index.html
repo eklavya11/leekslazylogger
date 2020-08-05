@@ -8,15 +8,15 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for leekslazylogger - an easy-to-use and lightweight Node console logger with file support.">
+        <meta name="description" content="Documentation for leekslazylogger - an easy-to-use and lightweight Node.JS logger with file support, colours, and timestamps.">
       
       
         <link rel="canonical" href="https://logger.eartharoid.me/">
       
       
-        <meta name="author" content="Isaac Saunders">
+        <meta name="author" content="eartharoid">
       
-      <link rel="shortcut icon" href="img/favicon.ico">
+      <link rel="shortcut icon" href="/img/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.2">
     
     
@@ -77,7 +77,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-header-nav__button md-logo" aria-label="leekslazylogger">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="/img/logo.png" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -163,7 +163,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-nav__button md-logo" aria-label="leekslazylogger">
       
-  <img src="img/logo.png" alt="logo">
+  <img src="/img/logo.png" alt="logo">
 
     </a>
     leekslazylogger
@@ -198,9 +198,70 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Home
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="." title="Home" class="md-nav__link md-nav__link--active">
       Home
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#donate" class="md-nav__link">
+    Donate
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -213,6 +274,18 @@
   <li class="md-nav__item">
     <a href="getting-started/" title="Getting Started" class="md-nav__link">
       Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="child-loggers/" title="Child Loggers" class="md-nav__link">
+      Child Loggers
     </a>
   </li>
 
@@ -236,16 +309,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Customisation
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Customisation" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -288,6 +361,51 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about" class="md-nav__link">
+    About
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    Features
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#support" class="md-nav__link">
+    Support
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#donate" class="md-nav__link">
+    Donate
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -307,38 +425,42 @@
                 
                 
                 <h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h1>
-<p>About</p>
-<p>Features yes</p>
+<p><a href="https://www.npmjs.com/package/leekslazylogger"><img alt="npm" src="https://img.shields.io/npm/v/leekslazylogger/latest?style=flat-square" /></a>   <a href="https://github.com/eartharoid/leekslazylogger/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/eartharoid/leekslazylogger?style=flat-square" /></a>    <a href="https://github.com/eartharoid/leekslazylogger/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/eartharoid/leekslazylogger?style=flat-square" /></a>    <a href="https://github.com/eartharoid/leekslazylogger/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/eartharoid/leekslazylogger?style=flat-square" /></a>    <a href="https://github.com/eartharoid/leekslazylogger/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/eartharoid/leekslazylogger?style=flat-square" /></a>    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/15dc38c312c3430d8ed02c58edb2e8bd?logo=codacy&amp;style=flat-square" />    <a href="https://discord.gg/pXc9vyC"><img alt="Discord support server" src="https://discordapp.com/api/guilds/451745464480432129/embed.png?style=shield" /></a></p>
+<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
+<p>leekslazylogger is an easy-to-use and lightweight Node.JS logger with file support, colours, and timestamps.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
 <ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
-<li>5</li>
-<li>6</li>
-<li>7</li>
-<li>8</li>
+<li><a href="/customisation">Highly customisable</a></li>
+<li>8 default log types and ability to add custom types</li>
+<li>Standard/RGB/HEX/8Bit colours</li>
+<li>UK and US spellings</li>
+<li>Short colour codes for fast colour (Minecraft-like, "&amp;cred text")</li>
+<li>Debug mode (ignores debug messages unless told not to)</li>
+<li>Custom timestamp and date format for file names</li>
+<li>Automatically cleans-up old logs (optional)</li>
+<li>Strips colour if it's not supported in the environment</li>
+<li>Cross-platform</li>
 </ul>
-<p>mm</p>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> nope</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> not quite</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> nearly</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> ah yes</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> yup</li>
-</ul>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Node</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">Logger</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leekslazylogger&#39;</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">({</span><span class="nx">options</span><span class="p">});</span>
-</code></pre></div>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<p>For installation and usage instructions/examples, see <a href="/getting-started">Getting Started</a></p>
+<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
+<p>If you can't find what you're looking for here, ask for help in <a href="https://discordapp.com/channels/451745464480432129/475351519516950548">#support</a> on <a href="https://discord.gg/pXc9vyC">Discord</a>.</p>
+<p><a href="https://discord.gg/pXc9vyC"><img alt="Discord" src="https://discordapp.com/api/guilds/451745464480432129/widget.png?style=banner4" /></a></p>
+<h2 id="donate">Donate<a class="headerlink" href="#donate" title="Permanent link">&para;</a></h2>
+<p><a href="https://ko-fi.com/eartharoid">Buy me a coffee if you want :)</a></p>
+                
+                  
+                    
 
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: August 5, 2020
+    
+  </small>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Browser</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;logger.js&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
-
-</div>
-</div>
+                  
                 
               
               
