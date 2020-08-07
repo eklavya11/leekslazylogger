@@ -288,8 +288,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../colours/" title="Colours" class="md-nav__link">
-      Colours
+    <a href="../log-types/" title="Default log types" class="md-nav__link">
+      Default log types
     </a>
   </li>
 
@@ -300,8 +300,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../log-types/" title="Default log types" class="md-nav__link">
-      Default log types
+    <a href="../colours/" title="Colours" class="md-nav__link">
+      Colours
     </a>
   </li>
 
@@ -467,7 +467,7 @@
 <p class="admonition-title">Warning</p>
 <p>Don't create another Logger instance in this process - use <a href="/child-loggers">ChildLoggers</a>.</p>
 </div>
-<p>For <code>options</code>, see <a href="/customisation">Customisation</a>.</p>
+<p>For <code>options</code>, see <a href="/customisation/options">Customisation/Options</a>.</p>
 <p>Please refer to <a href="/child-loggers">Child loggers</a> for information about using the logger in multiple files.</p>
 <h2 id="basic-usage">Basic usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h2>
 <p>Each log type (default or custom) can be used like this:</p>
@@ -475,8 +475,10 @@
 </code></pre></div>
 
 <div class="admonition example">
-<p class="admonition-title">Example</p>
+<p class="admonition-title">Examples</p>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">);</span>
+
+<span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="s1">&#39;Ready.&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;green&#39;</span><span class="p">]);</span>
 </code></pre></div>
 
 </div>

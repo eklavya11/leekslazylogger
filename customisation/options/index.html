@@ -226,8 +226,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../colours/" title="Colours" class="md-nav__link">
-      Colours
+    <a href="../../log-types/" title="Default log types" class="md-nav__link">
+      Default log types
     </a>
   </li>
 
@@ -238,8 +238,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../log-types/" title="Default log types" class="md-nav__link">
-      Default log types
+    <a href="../../colours/" title="Colours" class="md-nav__link">
+      Colours
     </a>
   </li>
 
@@ -297,9 +297,104 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Options
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Options" class="md-nav__link md-nav__link--active">
       Options
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-options" class="md-nav__link">
+    Available options
+  </a>
+  
+    <nav class="md-nav" aria-label="Available options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logtofile" class="md-nav__link">
+    logToFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamp" class="md-nav__link">
+    timestamp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxage" class="md-nav__link">
+    maxAge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keepsilent" class="md-nav__link">
+    keepSilent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    debug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translatecodes" class="md-nav__link">
+    translateCodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom" class="md-nav__link">
+    custom
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -338,6 +433,85 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#available-options" class="md-nav__link">
+    Available options
+  </a>
+  
+    <nav class="md-nav" aria-label="Available options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    name
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logtofile" class="md-nav__link">
+    logToFile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamp" class="md-nav__link">
+    timestamp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#maxage" class="md-nav__link">
+    maxAge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keepsilent" class="md-nav__link">
+    keepSilent
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    debug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#translatecodes" class="md-nav__link">
+    translateCodes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom" class="md-nav__link">
+    custom
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -357,6 +531,111 @@
                 
                 
                 <h1 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h1>
+<p>When you create your Logger instance you can pass an object containing options &amp; custom log types:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">Logger</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leekslazylogger&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">({});</span>
+</code></pre></div>
+
+<p>The object may take up many lines, so you could:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// index</span>
+<span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">(</span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./logger.js&#39;</span><span class="p">));</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">// logger.js</span>
+<span class="kr">const</span> <span class="p">{</span> <span class="nx">debug_mode</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./config.js&#39;</span><span class="p">);</span>
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Example&#39;</span><span class="p">,</span>
+    <span class="nx">custom</span><span class="o">:</span> <span class="p">{...},</span>
+    <span class="nx">debug</span><span class="o">:</span> <span class="nx">debug_mode</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h2 id="available-options">Available options<a class="headerlink" href="#available-options" title="Permanent link">&para;</a></h2>
+<h3 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Appears in the header of log files.</li>
+<li>Type: string</li>
+<li>Default: <code>A leekslazylogger project</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Example project&#39;</span><span class="p">,</span>
+</code></pre></div>
+
+</details>
+<h3 id="logtofile">logToFile<a class="headerlink" href="#logtofile" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Should everything be logged into a file for future reference?</li>
+<li>Type: boolean</li>
+<li>Default: <code>true</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">logToFile</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</code></pre></div>
+
+</details>
+<h3 id="timestamp">timestamp<a class="headerlink" href="#timestamp" title="Permanent link">&para;</a></h3>
+<ul>
+<li>A valid timestamp format. Refer to <a href="https://github.com/eartharoid/dtf/#placeholders">dtf docs</a>.</li>
+<li>Type: string</li>
+<li>Default: <code>HH:mm:ss</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">timestamp</span><span class="o">:</span> <span class="s1">&#39;DD/MM hh:mm AMPM&#39;</span><span class="p">,</span>
+</code></pre></div>
+
+</details>
+<h3 id="maxage">maxAge<a class="headerlink" href="#maxage" title="Permanent link">&para;</a></h3>
+<ul>
+<li>How long should old log files be kept for (in days)?</li>
+<li>Type: integer</li>
+<li>Default: <code>7</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">maxAge</span><span class="o">:</span> <span class="mi">30</span><span class="p">,</span>
+</code></pre></div>
+
+</details>
+<h3 id="keepsilent">keepSilent<a class="headerlink" href="#keepsilent" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Disable verbose from the logger? Quieter startup; errors and warnings will still be shown.</li>
+<li>Type: boolean</li>
+<li>Default: <code>false</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">keepSilent</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</code></pre></div>
+
+</details>
+<h3 id="debug">debug<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Should debug messages be logged. If false, <code>log.debug()</code> is ignored.</li>
+<li>Type: boolean</li>
+<li>Default: <code>false</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">debug</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">debug</span><span class="p">,</span>
+</code></pre></div>
+
+</details>
+<h3 id="translatecodes">translateCodes<a class="headerlink" href="#translatecodes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Should leeks short codes (&amp;codes) be used inline or ignored?</li>
+<li>Type: boolean</li>
+<li>Default: <code>true</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">translateCodes</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</code></pre></div>
+
+</details>
+<h3 id="custom">custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h3>
+<ul>
+<li>An object of custom log types. <strong>See <a href="./custom-types">Custom types</a></strong>.</li>
+<li>Type: object</li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">custom</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">sql</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;MySQL&#39;</span><span class="p">,</span>
+        <span class="nx">foreground</span><span class="o">:</span> <span class="s1">&#39;bluebright&#39;</span><span class="p">,</span>
+        <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;info&#39;</span>
+    <span class="p">},</span>
+<span class="p">},</span>
+</code></pre></div>
+
+</details>
                 
                   
                     
@@ -365,7 +644,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2020</span>
     
   </small>
 </div>
