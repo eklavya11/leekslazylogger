@@ -248,6 +248,19 @@
     Basic usage
   </a>
   
+    <nav class="md-nav" aria-label="Basic usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colour-overrides" class="md-nav__link">
+    Colour overrides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -275,6 +288,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../colours/" title="Colours" class="md-nav__link">
+      Colours
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../log-types/" title="Default log types" class="md-nav__link">
       Default log types
     </a>
@@ -288,16 +313,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Customisation
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Customisation" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -324,8 +349,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/custom-types/" title="Custom log types" class="md-nav__link">
-      Custom log types
+    <a href="../customisation/options/" title="Options" class="md-nav__link">
+      Options
     </a>
   </li>
 
@@ -336,8 +361,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/options/" title="Options" class="md-nav__link">
-      Options
+    <a href="../customisation/custom-types/" title="Custom log types" class="md-nav__link">
+      Custom log types
     </a>
   </li>
 
@@ -383,6 +408,19 @@
   <a href="#basic-usage" class="md-nav__link">
     Basic usage
   </a>
+  
+    <nav class="md-nav" aria-label="Basic usage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#colour-overrides" class="md-nav__link">
+    Colour overrides
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -443,6 +481,13 @@
 
 </div>
 <p>A list of the default log types can be found <a href="/log-types">here</a>. Look at <a href="/customisation/custom-types">this</a> page for information about custom log types.</p>
+<h3 id="colour-overrides">Colour overrides<a class="headerlink" href="#colour-overrides" title="Permanent link">&para;</a></h3>
+<p>If you want to override the colours of a particular line you can do so like this:</p>
+<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;useful information&#39;</span><span class="p">,</span> <span class="p">[</span><span class="nx">foreground</span><span class="p">,</span> <span class="nx">background</span><span class="p">]);</span>
+</code></pre></div>
+
+<p>This will colour the <strong>entire</strong> line, including the timestamp  &amp; title.
+<code>foreground</code> and <code>background</code> should be a resolvable <a href="/colours">colour</a>.</p>
                 
                   
                     
