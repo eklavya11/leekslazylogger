@@ -396,7 +396,7 @@
                 
                 <h1 id="child-loggers">Child loggers<a class="headerlink" href="#child-loggers" title="Permanent link">&para;</a></h1>
 <p>In your index you should have required leekslazylogger and created a new Logger instance as shown on the <a href="/geting-started">Getting started</a> page.</p>
-<p><strong>Don't create another Logger instance with this process - use ChildLoggers.</strong></p>
+<p><strong>Don't create another Logger instance in this process - use ChildLoggers.</strong></p>
 <p>To use the Logger in another file (eg. <code>utils.js</code>) you could use a ChildLogger, or you could pass <code>log</code>.</p>
 <h2 id="option-1">Option 1<a class="headerlink" href="#option-1" title="Permanent link">&para;</a></h2>
 <p><strong>Using a ChildLogger</strong></p>
@@ -411,7 +411,7 @@
 </code></pre></div>
 
 <h2 id="option-2">Option 2<a class="headerlink" href="#option-2" title="Permanent link">&para;</a></h2>
-<p><strong>Passing <code>log</code> object</strong></p>
+<p><strong>Passing the <code>log</code> object</strong></p>
 <p>Simple, just use the same <code>log</code> object in every file.</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// index.js</span>
 <span class="kr">const</span> <span class="nx">utils</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./utils.js&#39;</span><span class="p">);</span>
@@ -425,7 +425,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 6, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2020</span>
     
   </small>
 </div>
