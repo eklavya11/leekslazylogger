@@ -258,6 +258,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#inline-colours" class="md-nav__link">
+    Inline colours
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -419,6 +426,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#inline-colours" class="md-nav__link">
+    Inline colours
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -478,7 +492,9 @@
 <p class="admonition-title">Examples</p>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;Hello world&#39;</span><span class="p">);</span>
 
-<span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="s1">&#39;Ready.&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;green&#39;</span><span class="p">]);</span>
+<span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="s1">&#39;Ready.&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;magentaBright&#39;</span><span class="p">]);</span>
+
+<span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;Status: &amp;aonline&#39;</span><span class="p">));</span>
 </code></pre></div>
 
 </div>
@@ -490,6 +506,15 @@
 
 <p>This will colour the <strong>entire</strong> line, including the timestamp  &amp; title.
 <code>foreground</code> and <code>background</code> should be a resolvable <a href="/colours">colour</a>.</p>
+<h3 id="inline-colours">Inline colours<a class="headerlink" href="#inline-colours" title="Permanent link">&para;</a></h3>
+<p>Use the <code>log.format()</code> function to colour text using &codes;</p>
+<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;&amp;athis is green &amp;4and this is red&#39;</span><span class="p">));</span>
+</code></pre></div>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use <code>log.f()</code> too.</p>
+</div>
                 
                   
                     
@@ -498,7 +523,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 11, 2020</span>
     
   </small>
 </div>

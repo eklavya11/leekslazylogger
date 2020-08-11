@@ -624,6 +624,7 @@
 <h3 id="code">&amp;code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h3>
 <p>A string containing an <code>&amp;fg</code> or <code>&amp;!bg</code> short code for a leeks.js colour. All short codes are <a href="#leeksjs-short-codes">listed below</a>.</p>
 <p>Don't put a space between codes and text when using them inline (<code>&amp;cred</code> not <code>&amp;c red</code>) as the space will show.</p>
+<p>Use <code>log.f(String)</code> or <code>log.format(String)</code> to use inline colours.</p>
 <div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Override</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;some text&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;&amp;a&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;0&#39;</span><span class="p">]);</span>
 <span class="c1">// or</span>
@@ -632,15 +633,11 @@
 
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Inline</label><div class="tabbed-content">
-<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;this is normal info colour, &amp;athis is light green</span>
-<span class="s1">&amp;3,and it\&#39;s easy to return to the normal colour&#39;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="sb">`this is normal info colour, &amp;athis is light green</span>
+<span class="sb">&amp;3,and it</span><span class="err">\</span><span class="sb">&#39;s easy to return to the normal colour`</span><span class="p">));</span>
 </code></pre></div>
 
 </div>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can disable inline &amp;codes by setting the <code>translateCodes</code> <a href="/customisation/options">option</a> to <code>false</code>. The logger will ignore &amp;codes.</p>
 </div>
 <h4 id="leeksjs-short-codes">leeks.js short codes<a class="headerlink" href="#leeksjs-short-codes" title="Permanent link">&para;</a></h4>
 <h5 id="foreground-colours">Foreground colours<a class="headerlink" href="#foreground-colours" title="Permanent link">&para;</a></h5>
@@ -690,7 +687,7 @@
 </tr>
 <tr>
 <td align="left">&amp;9</td>
-<td align="left">cyanBright</td>
+<td align="left">blueBright</td>
 </tr>
 <tr>
 <td align="left">&amp;a</td>
@@ -698,7 +695,7 @@
 </tr>
 <tr>
 <td align="left">&amp;b</td>
-<td align="left">blueBright</td>
+<td align="left">cyanBright</td>
 </tr>
 <tr>
 <td align="left">&amp;c</td>
@@ -765,7 +762,7 @@
 </tr>
 <tr>
 <td align="left">&amp;!9</td>
-<td align="left">bgCyanBright</td>
+<td align="left">bgBlueBright</td>
 </tr>
 <tr>
 <td align="left">&amp;!a</td>
@@ -773,7 +770,7 @@
 </tr>
 <tr>
 <td align="left">&amp;!b</td>
-<td align="left">bgBlueBright</td>
+<td align="left">bgCyanBright</td>
 </tr>
 <tr>
 <td align="left">&amp;!c</td>
@@ -844,7 +841,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 11, 2020</span>
     
   </small>
 </div>
