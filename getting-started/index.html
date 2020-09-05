@@ -516,7 +516,7 @@
 </div>
 <p>And require it in your code:</p>
 <div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">Logger</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leekslazylogger&#39;</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">({</span><span class="nx">options</span><span class="p">});</span>
+<span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
 </code></pre></div>
 
 <div class="admonition warning">
@@ -527,7 +527,7 @@
 <p>Please refer to <a href="/child-loggers">Child loggers</a> for information about using the logger in multiple files.</p>
 <h2 id="basic-usage">Basic usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h2>
 <p>Each log type (default or custom) can be used like this:</p>
-<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">type</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="p">[</span><span class="nx">colours</span><span class="p">]);</span> <span class="c1">// colour overrides are optional</span>
+<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">type</span><span class="p">(</span><span class="nx">text</span> <span class="p">[,</span> <span class="nx">colours</span><span class="p">]);</span> <span class="c1">// colour overrides are optional</span>
 </code></pre></div>
 
 <div class="admonition example">
@@ -565,7 +565,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 11, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2020</span>
     
   </small>
 </div>
