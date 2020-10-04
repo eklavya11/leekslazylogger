@@ -333,6 +333,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../" title="Extensions" class="md-nav__link">
+      Extensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -380,13 +392,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
+  <a href="#screenshot" class="md-nav__link">
+    Screenshot
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#format" class="md-nav__link">
     Format
   </a>
@@ -398,6 +418,11 @@
   <a href="#placeholders" class="md-nav__link">
     Placeholders
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -468,13 +493,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#options" class="md-nav__link">
-    Options
+  <a href="#screenshot" class="md-nav__link">
+    Screenshot
   </a>
   
 </li>
       
         <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+    <nav class="md-nav" aria-label="Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#format" class="md-nav__link">
     Format
   </a>
@@ -486,6 +519,11 @@
   <a href="#placeholders" class="md-nav__link">
     Placeholders
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -540,6 +578,8 @@
 </code></pre></div>
 
 <p>The <code>app.use(log.express);</code> must be one of the first middleware, before the routing.</p>
+<h2 id="screenshot">Screenshot<a class="headerlink" href="#screenshot" title="Permanent link">&para;</a></h2>
+<p><img alt="image" src="https://i.imgur.com/1anKOAc.png" /></p>
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
 <p>ExpressLogger takes the <a href="/customisation/options/">same options as normal</a>, as well as an <code>express</code> object:</p>
 <div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ExpressLogger</span><span class="p">({</span>
@@ -549,11 +589,11 @@
 <span class="p">});</span>
 </code></pre></div>
 
-<h2 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
+<h3 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h3>
 <p>The default format is:
 <code>{method} {status-colour}{status} &amp;7{path} {time-colour}({time})</code></p>
 <p>The string <strong>can</strong> include <a href="/colours/#leeksjs-short-codes">colour codes</a>.</p>
-<h3 id="placeholders">Placeholders<a class="headerlink" href="#placeholders" title="Permanent link">&para;</a></h3>
+<h4 id="placeholders">Placeholders<a class="headerlink" href="#placeholders" title="Permanent link">&para;</a></h4>
 <p>The available placeholders for setting your own format are:</p>
 <ul>
 <li><code>{method}</code>: GET/POST etc</li>
@@ -596,7 +636,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../customisation/custom-types/" title="Custom log types" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="Extensions" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -605,7 +645,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Custom log types
+                Extensions
               </div>
             </div>
           </a>
