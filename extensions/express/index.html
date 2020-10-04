@@ -386,10 +386,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fastify/" title="Fastify plugin" class="md-nav__link">
+      Fastify plugin
+    </a>
   </li>
 
         
@@ -442,6 +474,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -466,7 +518,7 @@
 <div class="highlight"><pre><span></span><code><span class="c1">// set up logger with options</span>
 <span class="kr">const</span> <span class="nx">ExpressLogger</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leekslazylogger-express&#39;</span><span class="p">);</span>
 <span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ExpressLogger</span><span class="p">({</span>
-    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;My express server&#39;</span><span class="p">,</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;My express server&#39;</span><span class="p">,</span> <span class="c1">// regular options such as custom types</span>
     <span class="nx">express</span><span class="o">:</span> <span class="p">{</span>
         <span class="nx">format</span><span class="o">:</span> <span class="s1">&#39;{method} &amp;7{path}&#39;</span> <span class="c1">// optional</span>
     <span class="p">}</span>
@@ -489,18 +541,28 @@
 
 <p>The <code>app.use(log.express);</code> must be one of the first middleware, before the routing.</p>
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
-<p>ExpressLogger takes the <a href="/customisation/options/">same options as normal</a>, as well as <code>express.format</code>.</p>
+<p>ExpressLogger takes the <a href="/customisation/options/">same options as normal</a>, as well as an <code>express</code> object:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ExpressLogger</span><span class="p">({</span>
+    <span class="nx">express</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">format</span><span class="o">:</span> <span class="s1">&#39;&#39;</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+
+<h2 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
 <p>The default format is:
-<code>{method} &amp;7{path} {status-colour}{status} {time-colour}({time})</code></p>
+<code>{method} {status-colour}{status} &amp;7{path} {time-colour}({time})</code></p>
 <p>The string <strong>can</strong> include <a href="/colours/#leeksjs-short-codes">colour codes</a>.</p>
+<h3 id="placeholders">Placeholders<a class="headerlink" href="#placeholders" title="Permanent link">&para;</a></h3>
 <p>The available placeholders for setting your own format are:</p>
 <ul>
 <li><code>{method}</code>: GET/POST etc</li>
 <li><code>{protocol}</code>: HTTP or HTTPS</li>
-<li><code>{path}</code>: base URL and path (no query)</li>
-<li><code>{status-colour}</code> / <code>{status-color}</code>: green/orange/blue/red colour based on status code</li>
+<li><code>{route}</code>: express route name (eg: <code>/users/:id</code>)</li>
+<li><code>{path}</code>: Full path (no query)</li>
+<li><code>{status-colour}</code> / <code>{status-color}</code>: green/orange/blue/red colour code based on status code (to prefix status)</li>
 <li><code>{status}</code>: status code (200, 301, 404 etc)</li>
-<li><code>{time-colour}</code> / <code>{time-color}</code>: light green/yellow/red colour based on time</li>
+<li><code>{time-colour}</code> / <code>{time-color}</code>: light green/yellow/red colour code based on time (to prefix time)</li>
 <li><code>{time}</code>: time in ms for request to be completed</li>
 </ul>
                 
@@ -511,7 +573,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2020</span>
     
   </small>
 </div>
@@ -548,6 +610,20 @@
             </div>
           </a>
         
+        
+          <a href="../fastify/" title="Fastify plugin" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Fastify plugin
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
       </nav>
     </div>

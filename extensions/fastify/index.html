@@ -9,7 +9,7 @@
         <meta name="description" content="Documentation for leekslazylogger - an easy-to-use and lightweight Node.JS logger with file support, colours, and timestamps.">
       
       
-        <link rel="canonical" href="https://logger.eartharoid.me/">
+        <link rel="canonical" href="https://logger.eartharoid.me/extensions/fastify/">
       
       
         <meta name="author" content="eartharoid">
@@ -19,14 +19,14 @@
     
     
       
-        <title>leekslazylogger</title>
+        <title>Fastify plugin - leekslazylogger</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
         
           
           
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#home" class="md-skip">
+        <a href="#fastify-plugin" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Fastify plugin
             
           </span>
         </div>
@@ -188,77 +188,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#about" class="md-nav__link">
-    About
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting started
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#donate" class="md-nav__link">
-    Donate
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -268,7 +202,7 @@
 
 
   <li class="md-nav__item">
-    <a href="getting-started/" title="Getting started" class="md-nav__link">
+    <a href="../../getting-started/" title="Getting started" class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -280,7 +214,7 @@
 
 
   <li class="md-nav__item">
-    <a href="child-loggers/" title="Child loggers" class="md-nav__link">
+    <a href="../../child-loggers/" title="Child loggers" class="md-nav__link">
       Child loggers
     </a>
   </li>
@@ -292,7 +226,7 @@
 
 
   <li class="md-nav__item">
-    <a href="log-types/" title="Default log types" class="md-nav__link">
+    <a href="../../log-types/" title="Default log types" class="md-nav__link">
       Default log types
     </a>
   </li>
@@ -304,7 +238,7 @@
 
 
   <li class="md-nav__item">
-    <a href="colours/" title="Colours" class="md-nav__link">
+    <a href="../../colours/" title="Colours" class="md-nav__link">
       Colours
     </a>
   </li>
@@ -337,7 +271,7 @@
 
 
   <li class="md-nav__item">
-    <a href="customisation/" title="Customisation" class="md-nav__link">
+    <a href="../../customisation/" title="Customisation" class="md-nav__link">
       Customisation
     </a>
   </li>
@@ -349,7 +283,7 @@
 
 
   <li class="md-nav__item">
-    <a href="customisation/options/" title="Options" class="md-nav__link">
+    <a href="../../customisation/options/" title="Options" class="md-nav__link">
       Options
     </a>
   </li>
@@ -361,7 +295,7 @@
 
 
   <li class="md-nav__item">
-    <a href="customisation/custom-types/" title="Custom log types" class="md-nav__link">
+    <a href="../../customisation/custom-types/" title="Custom log types" class="md-nav__link">
       Custom log types
     </a>
   </li>
@@ -376,10 +310,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       Extensions
@@ -399,7 +335,7 @@
 
 
   <li class="md-nav__item">
-    <a href="extensions/express/" title="Express middleware" class="md-nav__link">
+    <a href="../express/" title="Express middleware" class="md-nav__link">
       Express middleware
     </a>
   </li>
@@ -409,11 +345,83 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="extensions/fastify/" title="Fastify plugin" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Fastify plugin
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Fastify plugin" class="md-nav__link md-nav__link--active">
       Fastify plugin
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options" class="md-nav__link">
+    Options
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -446,37 +454,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#about" class="md-nav__link">
-    About
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    Features
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting started
+  <a href="#options" class="md-nav__link">
+    Options
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
+  <a href="#format" class="md-nav__link">
+    Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#placeholders" class="md-nav__link">
+    Placeholders
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#donate" class="md-nav__link">
-    Donate
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -492,35 +506,65 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/eartharoid/leekslazylogger/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/eartharoid/leekslazylogger/edit/master/docs/extensions/fastify.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h1>
-<p><a href="https://www.npmjs.com/package/leekslazylogger"><img alt="npm" src="https://img.shields.io/npm/v/leekslazylogger/latest?style=flat-square" /></a>   <a href="https://github.com/eartharoid/leekslazylogger/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/eartharoid/leekslazylogger?style=flat-square" /></a>    <a href="https://github.com/eartharoid/leekslazylogger/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/eartharoid/leekslazylogger?style=flat-square" /></a>    <a href="https://github.com/eartharoid/leekslazylogger/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/eartharoid/leekslazylogger?style=flat-square" /></a>    <a href="https://github.com/eartharoid/leekslazylogger/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/eartharoid/leekslazylogger?style=flat-square" /></a>    <img alt="Codacy grade" src="https://img.shields.io/codacy/grade/15dc38c312c3430d8ed02c58edb2e8bd?logo=codacy&amp;style=flat-square" />    <a href="https://discord.gg/pXc9vyC"><img alt="Discord support server" src="https://discordapp.com/api/guilds/451745464480432129/embed.png?style=shield" /></a></p>
-<h2 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h2>
-<p>leekslazylogger is an easy-to-use and lightweight Node.JS logger with file support, colours, and timestamps.</p>
-<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+                <h1 id="fastify-plugin">Fastify plugin<a class="headerlink" href="#fastify-plugin" title="Permanent link">&para;</a></h1>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p><code>npm i leekslazylogger-fastify</code></p>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// set up logger with options</span>
+<span class="kr">const</span> <span class="nx">FastifyLogger</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leekslazylogger-fastify&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FastifyLogger</span><span class="p">({</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;My fastify server&#39;</span><span class="p">,</span> <span class="c1">// regular options such as custom types</span>
+<span class="p">});</span>
+
+<span class="c1">// require fastify</span>
+<span class="kr">const</span> <span class="nx">fastify</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;fastify&#39;</span><span class="p">)();</span>
+
+<span class="c1">// use logger plugin</span>
+<span class="nx">fastify</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">fastify</span><span class="p">);</span>
+<span class="c1">// OR</span>
+<span class="nx">fastify</span><span class="p">.</span><span class="nx">register</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">fastify</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">format</span><span class="o">:</span> <span class="s1">&#39;{method} &amp;7{path}&#39;</span> <span class="c1">// optional</span>
+<span class="p">});</span>
+
+<span class="p">...</span>
+<span class="c1">// other plugins and router</span>
+<span class="p">...</span>
+
+<span class="c1">// start server</span>
+<span class="nx">fastify</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mf">8080</span><span class="p">);</span>
+</code></pre></div>
+
+<p>The <code>app.use(log.fastify);</code> must be one of the first plugin, before the routing.</p>
+<h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
+<p>FastifyLogger takes the <a href="/customisation/options/">same options as normal</a>, as well as a <code>fastify</code> object:</p>
+<div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">FastifyLogger</span><span class="p">({</span>
+    <span class="nx">fastify</span><span class="o">:</span> <span class="p">{</span>
+        <span class="nx">format</span><span class="o">:</span> <span class="s1">&#39;&#39;</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</code></pre></div>
+
+<h2 id="format">Format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h2>
+<p>The default format is:
+<code>{method} {status-colour}{status} &amp;7{path} {time-colour}({time})</code></p>
+<p>The string <strong>can</strong> include <a href="/colours/#leeksjs-short-codes">colour codes</a>.</p>
+<h3 id="placeholders">Placeholders<a class="headerlink" href="#placeholders" title="Permanent link">&para;</a></h3>
+<p>The available placeholders for setting your own format are:</p>
 <ul>
-<li><a href="/customisation">Highly customisable</a></li>
-<li>8 default log types and ability to add custom types</li>
-<li>Standard/RGB/HEX/8Bit colours</li>
-<li>UK and US spellings</li>
-<li>Short colour codes for fast colour (<code>&amp;cred text</code> -&gt; <code>red text</code> in red)</li>
-<li>Debug mode (ignores debug messages unless told not to)</li>
-<li>Custom timestamp and date format for file names</li>
-<li>Automatically cleans-up old logs (optional)</li>
-<li>Strips colour if it's not supported in the environment</li>
-<li>Cross-platform</li>
+<li><code>{method}</code>: GET/POST etc</li>
+<li><code>{protocol}</code>: HTTP or HTTPS</li>
+<li><code>{route}</code>: fastify route name (eg: <code>/users/:id</code>)</li>
+<li><code>{path}</code>: Full path (no query)</li>
+<li><code>{status-colour}</code> / <code>{status-color}</code>: green/orange/blue/red colour code based on status code (to prefix status)</li>
+<li><code>{status}</code>: status code (200, 301, 404 etc)</li>
+<li><code>{time-colour}</code> / <code>{time-color}</code>: light green/yellow/red colour code based on time (to prefix time)</li>
+<li><code>{time}</code>: time in ms for request to be completed</li>
 </ul>
-<h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<p>For installation and usage instructions/examples, see <a href="/getting-started">Getting Started</a></p>
-<h2 id="support">Support<a class="headerlink" href="#support" title="Permanent link">&para;</a></h2>
-<p>If you can't find what you're looking for here, ask for help in <a href="https://discordapp.com/channels/451745464480432129/475351519516950548">#support</a> on <a href="https://discord.gg/pXc9vyC">Discord</a>.</p>
-<p><a href="https://discord.gg/pXc9vyC"><img alt="Discord" src="https://discordapp.com/api/guilds/451745464480432129/widget.png?style=banner4" /></a></p>
-<h2 id="donate">Donate<a class="headerlink" href="#donate" title="Permanent link">&para;</a></h2>
-<p><a href="https://ko-fi.com/eartharoid"><img alt="ko-fi" src="https://www.ko-fi.com/img/githubbutton_sm.svg" /></a></p>
                 
                   
                     
@@ -529,7 +573,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2020</span>
     
   </small>
 </div>
@@ -552,20 +596,20 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-        
-          <a href="getting-started/" title="Getting started" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../express/" title="Express middleware" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
-                  Next
+                  Previous
                 </span>
-                Getting started
+                Express middleware
               </div>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     </div>
@@ -630,15 +674,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../..",
           features: ['instant'],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
