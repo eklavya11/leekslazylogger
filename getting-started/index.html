@@ -279,18 +279,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../child-loggers/" title="Child loggers" class="md-nav__link">
-      Child loggers
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
     <a href="../log-types/" title="Default log types" class="md-nav__link">
       Default log types
     </a>
@@ -316,14 +304,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-6">
+    <label class="md-nav__link" for="nav-5">
       Customisation
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Customisation" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
+      <label class="md-nav__title" for="nav-5">
         <span class="md-nav__icon md-icon"></span>
         Customisation
       </label>
@@ -378,14 +366,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
-    <label class="md-nav__link" for="nav-7">
+    <label class="md-nav__link" for="nav-6">
       Extensions
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Extensions" data-md-level="1">
-      <label class="md-nav__title" for="nav-7">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon"></span>
         Extensions
       </label>
@@ -526,12 +514,11 @@
 <span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
 </code></pre></div>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Don't create another Logger instance in this process - use <a href="/child-loggers">ChildLoggers</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Logger instances in the same process share options. Additional logger instances (if you create more in other files) will have the same log functions.</p>
 </div>
 <p>For <code>options</code>, see <a href="/customisation/options">Customisation/Options</a>.</p>
-<p>Please refer to <a href="/child-loggers">Child loggers</a> for information about using the logger in multiple files.</p>
 <h2 id="basic-usage">Basic usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h2>
 <p>Each log type (default or custom) can be used like this:</p>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">type</span><span class="p">(</span><span class="nx">text</span> <span class="p">[,</span> <span class="nx">colours</span><span class="p">]);</span> <span class="c1">// colour overrides are optional</span>
@@ -557,12 +544,12 @@
 <code>foreground</code> and <code>background</code> should be a resolvable <a href="/colours">colour</a>.</p>
 <h3 id="inline-colours">Inline colours<a class="headerlink" href="#inline-colours" title="Permanent link">&para;</a></h3>
 <p>Use the <code>log.format()</code> function to colour text using &codes;</p>
-<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;&amp;athis is green &amp;4and this is red&#39;</span><span class="p">));</span>
+<div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="nx">Logger</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="s1">&#39;&amp;athis is green &amp;4and this is red&#39;</span><span class="p">));</span>
 </code></pre></div>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can use <code>log.f()</code> too.</p>
+<p>You can use <code>Logger#f()</code> too.</p>
 </div>
                 
                   
@@ -572,7 +559,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2020</span>
     
   </small>
 </div>
@@ -610,13 +597,13 @@
           </a>
         
         
-          <a href="../child-loggers/" title="Child loggers" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../log-types/" title="Default log types" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Child loggers
+                Default log types
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
