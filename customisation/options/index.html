@@ -15,7 +15,7 @@
         <meta name="author" content="eartharoid">
       
       <link rel="shortcut icon" href="/img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bc7e593a.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab28b872.min.css">
         
           
           
@@ -75,7 +75,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-header-nav__button md-logo" aria-label="leekslazylogger">
       
@@ -159,7 +161,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-nav__button md-logo" aria-label="leekslazylogger">
       
@@ -190,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Home" class="md-nav__link">
+    <a href="../.." class="md-nav__link">
       Home
     </a>
   </li>
@@ -202,7 +206,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/" title="Getting started" class="md-nav__link">
+    <a href="../../getting-started/" class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -214,7 +218,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../log-types/" title="Default log types" class="md-nav__link">
+    <a href="../../log-types/" class="md-nav__link">
       Default log types
     </a>
   </li>
@@ -226,7 +230,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../colours/" title="Colours" class="md-nav__link">
+    <a href="../../colours/" class="md-nav__link">
       Colours
     </a>
   </li>
@@ -261,7 +265,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../" title="Customisation" class="md-nav__link">
+    <a href="../" class="md-nav__link">
       Customisation
     </a>
   </li>
@@ -286,7 +290,7 @@
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Options" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Options
     </a>
     
@@ -354,6 +358,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#directory" class="md-nav__link">
+    directory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#custom" class="md-nav__link">
     custom
   </a>
@@ -378,7 +389,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../custom-types/" title="Custom log types" class="md-nav__link">
+    <a href="../custom-types/" class="md-nav__link">
       Custom log types
     </a>
   </li>
@@ -416,7 +427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../extensions/" title="Extensions" class="md-nav__link">
+    <a href="../../extensions/" class="md-nav__link">
       Extensions
     </a>
   </li>
@@ -428,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../extensions/express/" title="Express middleware" class="md-nav__link">
+    <a href="../../extensions/express/" class="md-nav__link">
       Express middleware
     </a>
   </li>
@@ -440,7 +451,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../extensions/fastify/" title="Fastify plugin" class="md-nav__link">
+    <a href="../../extensions/fastify/" class="md-nav__link">
       Fastify plugin
     </a>
   </li>
@@ -525,6 +536,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#directory" class="md-nav__link">
+    directory
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#custom" class="md-nav__link">
     custom
   </a>
@@ -558,12 +576,10 @@
 <div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">Logger</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leekslazylogger&#39;</span><span class="p">);</span>
 <span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">(</span><span class="nx">options</span><span class="p">);</span>
 </code></pre></div>
-
 <p>The object may take up many lines, so you could:</p>
 <div class="highlight"><pre><span></span><code><span class="c1">// index</span>
 <span class="kr">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Logger</span><span class="p">(</span><span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./logger.js&#39;</span><span class="p">));</span>
 </code></pre></div>
-
 <div class="highlight"><pre><span></span><code><span class="c1">// logger.js</span>
 <span class="kr">const</span> <span class="p">{</span> <span class="nx">debug_mode</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./config.js&#39;</span><span class="p">);</span>
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
@@ -572,7 +588,6 @@
     <span class="nx">debug</span><span class="o">:</span> <span class="nx">debug_mode</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="available-options">Available options<a class="headerlink" href="#available-options" title="Permanent link">&para;</a></h2>
 <h3 id="name">name<a class="headerlink" href="#name" title="Permanent link">&para;</a></h3>
 <ul>
@@ -582,7 +597,6 @@
 </ul>
 <details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Example project&#39;</span><span class="p">,</span>
 </code></pre></div>
-
 </details>
 <h3 id="logtofile">logToFile<a class="headerlink" href="#logtofile" title="Permanent link">&para;</a></h3>
 <ul>
@@ -592,7 +606,6 @@
 </ul>
 <details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">logToFile</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
 </code></pre></div>
-
 </details>
 <h3 id="timestamp">timestamp<a class="headerlink" href="#timestamp" title="Permanent link">&para;</a></h3>
 <ul>
@@ -602,7 +615,6 @@
 </ul>
 <details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">timestamp</span><span class="o">:</span> <span class="s1">&#39;DD/MM hh:mm AMPM&#39;</span><span class="p">,</span>
 </code></pre></div>
-
 </details>
 <h3 id="maxage">maxAge<a class="headerlink" href="#maxage" title="Permanent link">&para;</a></h3>
 <ul>
@@ -612,7 +624,6 @@
 </ul>
 <details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">maxAge</span><span class="o">:</span> <span class="mf">30</span><span class="p">,</span>
 </code></pre></div>
-
 </details>
 <h3 id="keepsilent">keepSilent<a class="headerlink" href="#keepsilent" title="Permanent link">&para;</a></h3>
 <ul>
@@ -622,7 +633,6 @@
 </ul>
 <details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">keepSilent</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
 </code></pre></div>
-
 </details>
 <h3 id="debug">debug<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h3>
 <ul>
@@ -632,7 +642,15 @@
 </ul>
 <details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">debug</span><span class="o">:</span> <span class="nx">config</span><span class="p">.</span><span class="nx">debug</span><span class="p">,</span>
 </code></pre></div>
-
+</details>
+<h3 id="directory">directory<a class="headerlink" href="#directory" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Logs directory name or path</li>
+<li>Type: string</li>
+<li>Default: <code>./logs/</code></li>
+</ul>
+<details class="example"><summary>Example</summary><div class="highlight"><pre><span></span><code><span class="nx">directory</span><span class="o">:</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;/log-files/&#39;</span><span class="p">),</span>
+</code></pre></div>
 </details>
 <h3 id="custom">custom<a class="headerlink" href="#custom" title="Permanent link">&para;</a></h3>
 <ul>
@@ -647,7 +665,6 @@
     <span class="p">},</span>
 <span class="p">},</span>
 </code></pre></div>
-
 </details>
                 
                   
@@ -657,7 +674,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2020</span>
     
   </small>
 </div>
@@ -680,7 +697,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../" title="Customisation" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -695,7 +712,7 @@
           </a>
         
         
-          <a href="../custom-types/" title="Custom log types" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../custom-types/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -772,8 +789,8 @@
       
     </div>
     
-      <script src="../../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

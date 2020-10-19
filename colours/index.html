@@ -15,7 +15,7 @@
         <meta name="author" content="eartharoid">
       
       <link rel="shortcut icon" href="/img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
         
           
           
@@ -75,7 +75,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-header-nav__button md-logo" aria-label="leekslazylogger">
       
@@ -159,7 +161,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-nav__button md-logo" aria-label="leekslazylogger">
       
@@ -190,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href=".." class="md-nav__link">
       Home
     </a>
   </li>
@@ -202,7 +206,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getting-started/" title="Getting started" class="md-nav__link">
+    <a href="../getting-started/" class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -214,7 +218,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../log-types/" title="Default log types" class="md-nav__link">
+    <a href="../log-types/" class="md-nav__link">
       Default log types
     </a>
   </li>
@@ -239,7 +243,7 @@
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Colours" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Colours
     </a>
     
@@ -378,7 +382,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/" title="Customisation" class="md-nav__link">
+    <a href="../customisation/" class="md-nav__link">
       Customisation
     </a>
   </li>
@@ -390,7 +394,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/options/" title="Options" class="md-nav__link">
+    <a href="../customisation/options/" class="md-nav__link">
       Options
     </a>
   </li>
@@ -402,7 +406,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/custom-types/" title="Custom log types" class="md-nav__link">
+    <a href="../customisation/custom-types/" class="md-nav__link">
       Custom log types
     </a>
   </li>
@@ -440,7 +444,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/" title="Extensions" class="md-nav__link">
+    <a href="../extensions/" class="md-nav__link">
       Extensions
     </a>
   </li>
@@ -452,7 +456,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/express/" title="Express middleware" class="md-nav__link">
+    <a href="../extensions/express/" class="md-nav__link">
       Express middleware
     </a>
   </li>
@@ -464,7 +468,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/fastify/" title="Fastify plugin" class="md-nav__link">
+    <a href="../extensions/fastify/" class="md-nav__link">
       Fastify plugin
     </a>
   </li>
@@ -608,7 +612,6 @@
 <details class="example"><summary>Example</summary><p><strong>Require leeks.js</strong> to use inline colours other than &amp;codes:</p>
 <div class="highlight"><pre><span></span><code><span class="kr">const</span> <span class="nx">leeks</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;leeks.js&#39;</span><span class="p">);</span>
 </code></pre></div>
-
 <p><strong>BUT</strong> I recommend using &amp;codes instead if you want to use inline colours.</p>
 </details>
 <p><strong>Using overrides:</strong></p>
@@ -616,7 +619,6 @@
 <span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="p">[</span><span class="nx">foregroundColour</span><span class="p">,</span> <span class="nx">backgroundColour</span><span class="p">]);</span>
 <span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="p">[</span><span class="nx">backgroundColour</span><span class="p">]);</span>
 </code></pre></div>
-
 <p>where <code>foregroundColour</code> and <code>backgroundColour</code> are resolvable <a href="/colours">colours</a>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -631,13 +633,11 @@
 <span class="c1">// or</span>
 <span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;some text&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;bgBlack&#39;</span><span class="p">]);</span>
 </code></pre></div>
-
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Inline</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="sb">`this part is normal info colour </span><span class="si">${</span><span class="nx">leeks</span><span class="p">.</span><span class="nx">colours</span><span class="p">.</span><span class="nx">red</span><span class="p">(</span><span class="s1">&#39;but this part is red&#39;</span><span class="p">)</span><span class="si">}</span><span class="sb">,</span>
 <span class="sb">although this is also red :(`</span><span class="p">);</span> <span class="c1">// better to use &amp;codes for inline</span>
 </code></pre></div>
-
 </div>
 </div>
 <h3 id="rgb">RGB<a class="headerlink" href="#rgb" title="Permanent link">&para;</a></h3>
@@ -645,19 +645,16 @@
 <p>See <a href="https://derpyenterprises.org/docs/#/leeks?id=usage">leeks.js docs</a> for inline usage.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;some text&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;123, 123, 123&#39;</span><span class="p">,</span> <span class="s1">&#39;321, 321, 321&#39;</span><span class="p">]);</span>
 </code></pre></div>
-
 <h3 id="hex">HEX<a class="headerlink" href="#hex" title="Permanent link">&para;</a></h3>
 <p>A string with a HEX code (<strong>with</strong> hashtag).</p>
 <p>See <a href="https://derpyenterprises.org/docs/#/leeks?id=usage">leeks.js docs</a> for inline usage.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;some text&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;#AABBCC&#39;</span><span class="p">,</span> <span class="s1">&#39;#123456&#39;</span><span class="p">]);</span>
 </code></pre></div>
-
 <h3 id="8bit">8bit<a class="headerlink" href="#8bit" title="Permanent link">&para;</a></h3>
 <p>A number. <em>You will get an error if you try to put the number in a string.</em></p>
 <p>See <a href="https://derpyenterprises.org/docs/#/leeks?id=usage">leeks.js docs</a> for inline usage.</p>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;some text&#39;</span><span class="p">,</span> <span class="p">[</span><span class="mf">16</span><span class="p">,</span> <span class="mf">1</span><span class="p">]);</span>
 </code></pre></div>
-
 <h3 id="code">&amp;code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h3>
 <p>A string containing an <code>&amp;fg</code> or <code>&amp;!bg</code> short code for a leeks.js colour. All short codes are <a href="#leeksjs-short-codes">listed below</a>.</p>
 <p>Don't put a space between codes and text when using them inline (<code>&amp;cred</code> not <code>&amp;c red</code>) as the space will show.</p>
@@ -667,13 +664,11 @@
 <span class="c1">// or</span>
 <span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s1">&#39;some text&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;&amp;a&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;!0&#39;</span><span class="p">]);</span>
 </code></pre></div>
-
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Inline</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">format</span><span class="p">(</span><span class="sb">`this is normal info colour, &amp;athis is light green</span>
 <span class="sb">&amp;3,and it</span><span class="err">\</span><span class="sb">&#39;s easy to return to the normal colour`</span><span class="p">));</span>
 </code></pre></div>
-
 </div>
 </div>
 <h4 id="leeksjs-short-codes">leeks.js short codes<a class="headerlink" href="#leeksjs-short-codes" title="Permanent link">&para;</a></h4>
@@ -901,7 +896,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../log-types/" title="Default log types" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../log-types/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -916,7 +911,7 @@
           </a>
         
         
-          <a href="../customisation/" title="Customisation" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../customisation/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -993,8 +988,8 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

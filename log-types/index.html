@@ -15,7 +15,7 @@
         <meta name="author" content="eartharoid">
       
       <link rel="shortcut icon" href="/img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.38780c08.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.bc7e593a.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f72e892.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab28b872.min.css">
         
           
           
@@ -75,7 +75,9 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-header-nav__button md-logo" aria-label="leekslazylogger">
       
@@ -159,7 +161,9 @@
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="https://logger.eartharoid.me" title="leekslazylogger" class="md-nav__button md-logo" aria-label="leekslazylogger">
       
@@ -190,7 +194,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." title="Home" class="md-nav__link">
+    <a href=".." class="md-nav__link">
       Home
     </a>
   </li>
@@ -202,7 +206,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../getting-started/" title="Getting started" class="md-nav__link">
+    <a href="../getting-started/" class="md-nav__link">
       Getting started
     </a>
   </li>
@@ -227,7 +231,7 @@
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="./" title="Default log types" class="md-nav__link md-nav__link--active">
+    <a href="./" class="md-nav__link md-nav__link--active">
       Default log types
     </a>
     
@@ -313,7 +317,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../colours/" title="Colours" class="md-nav__link">
+    <a href="../colours/" class="md-nav__link">
       Colours
     </a>
   </li>
@@ -346,7 +350,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/" title="Customisation" class="md-nav__link">
+    <a href="../customisation/" class="md-nav__link">
       Customisation
     </a>
   </li>
@@ -358,7 +362,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/options/" title="Options" class="md-nav__link">
+    <a href="../customisation/options/" class="md-nav__link">
       Options
     </a>
   </li>
@@ -370,7 +374,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../customisation/custom-types/" title="Custom log types" class="md-nav__link">
+    <a href="../customisation/custom-types/" class="md-nav__link">
       Custom log types
     </a>
   </li>
@@ -408,7 +412,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/" title="Extensions" class="md-nav__link">
+    <a href="../extensions/" class="md-nav__link">
       Extensions
     </a>
   </li>
@@ -420,7 +424,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/express/" title="Express middleware" class="md-nav__link">
+    <a href="../extensions/express/" class="md-nav__link">
       Express middleware
     </a>
   </li>
@@ -432,7 +436,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../extensions/fastify/" title="Fastify plugin" class="md-nav__link">
+    <a href="../extensions/fastify/" class="md-nav__link">
       Fastify plugin
     </a>
   </li>
@@ -546,43 +550,35 @@
 <span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="p">[</span><span class="nx">foregroundColour</span><span class="p">,</span> <span class="nx">backgroundColour</span><span class="p">]);</span>
 <span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">text</span><span class="p">,</span> <span class="p">[</span><span class="nx">backgroundColour</span><span class="p">]);</span>
 </code></pre></div>
-
 <p>where <code>foregroundColour</code> and <code>backgroundColour</code> are resolvable <a href="/colours">colours</a>.</p>
 <h2 id="basic">basic<a class="headerlink" href="#basic" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">basic</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: white</span>
 <span class="c1">// -&gt; [00:00:00] text</span>
 </code></pre></div>
-
 <h2 id="console">console<a class="headerlink" href="#console" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">console</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: white</span>
 <span class="c1">// -&gt; [00:00:00 | INFO] text</span>
 </code></pre></div>
-
 <h2 id="info">info<a class="headerlink" href="#info" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: cyan</span>
 <span class="c1">// -&gt; [00:00:00 | INFO] text</span>
 </code></pre></div>
-
 <h2 id="success">success<a class="headerlink" href="#success" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">success</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: green</span>
 <span class="c1">// -&gt; [00:00:00 | INFO] text</span>
 </code></pre></div>
-
 <h2 id="debug">debug<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: blue</span>
 <span class="c1">// -&gt; [00:00:00 | DEBUG] text</span>
 </code></pre></div>
-
 <h2 id="notice">notice<a class="headerlink" href="#notice" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">notice</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: black on bgYellow</span>
 <span class="c1">// -&gt; [00:00:00 | NOTICE] text</span>
 </code></pre></div>
-
 <h2 id="warn">warn<a class="headerlink" href="#warn" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: yellow</span>
 <span class="c1">// -&gt; [00:00:00 | WARN] text</span>
 </code></pre></div>
-
 <h2 id="error">error<a class="headerlink" href="#error" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nx">log</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span> <span class="c1">// default: red</span>
 <span class="c1">// -&gt; [00:00:00 | ERROR] text</span>
@@ -618,7 +614,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../getting-started/" title="Getting started" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../getting-started/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -633,7 +629,7 @@
           </a>
         
         
-          <a href="../colours/" title="Colours" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../colours/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
@@ -710,8 +706,8 @@
       
     </div>
     
-      <script src="../assets/javascripts/vendor.77e55a48.min.js"></script>
-      <script src="../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../assets/javascripts/vendor.6a3d08fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
